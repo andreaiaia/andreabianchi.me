@@ -1,11 +1,18 @@
-nav, nav > * {
+nav {
+  display: grid;
+  justify-items: center;
+}
+
+nav > #social {
   display: flex;
 }
 
-nav > #menu {
-  width: 80%;
-  justify-content: center;
+nav > #social {
+  width: 50%;
+  justify-content: space-evenly;
 }
-#menu > * {
-  margin: 0 1rem;
+
+nav > * {
+  padding: 0;
 }
+

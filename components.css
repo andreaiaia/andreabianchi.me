@@ -1,0 +1,10 @@
+/* BUTTONS */
+
+button {
+  border: 0;
+  background-color: rgba(0,0,0,0);
+  transition: .15s ease;
+}
+button:active {
+  transform: scale(.85);
+}
