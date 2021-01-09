@@ -11,6 +11,7 @@ html {
 }
 
 header {
+  transition: 0.3s;
   z-index: 5;
   position: fixed;
   width: 88%;
@@ -23,7 +24,9 @@ header {
   box-shadow: 0 10px 20px rgba(0, 0, 0, .4);
 }
 header > h1 {
-  margin-top: 2rem;
+  transition: 0.3s;
+  margin-top: 1.8rem;
+  margin-bottom: 1rem;
   font-size: 2.1rem;
   text-align: center;
   font-weight: 700;
@@ -35,18 +38,39 @@ nav {
   justify-content: space-evenly;
 }
 nav > a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-decoration: none;
   font-family: "Spartan", sans-serif;
   font-weight: 600;
   color: rgba(22, 75, 92, 0.9);
 }
+nav > a > p {
+  margin-top: .5rem;
+}
+nav > a > svg {
+  width: 30px;
+  height: 30px;
+}
 
 #content {
   position: absolute;
   width: 88%;
-  height: 94%;
+  height: 72%;
   left: 5%;
   top: 26%;
+  border-radius: 30px;
+  background: linear-gradient(165deg, rgba(255, 255, 255, .64), rgba(255, 255, 255, .16));
+  backdrop-filter: blur(20px);
+}
+#more {
+  position: absolute;
+  width: 88%;
+  height: 50%;
+  left: 5%;
+  top: 105%;
   border-radius: 30px;
   background: linear-gradient(165deg, rgba(255, 255, 255, .64), rgba(255, 255, 255, .16));
   backdrop-filter: blur(20px);
