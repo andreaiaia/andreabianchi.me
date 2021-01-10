@@ -5,7 +5,7 @@ function scrollFunction() {
   const head = document.querySelector("HEADER");
   const navp = document.querySelectorAll(".navp");
 
-  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
     head.style.height = "13%";
 
     title.style.fontSize = "1.7rem";
