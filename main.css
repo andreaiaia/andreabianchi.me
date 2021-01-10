@@ -120,3 +120,13 @@ footer {
   height: 110px;
   border-radius: 50%;
 }
+
+#privacy {
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: 1;
+}
+#privacy > svg {
+  width: 200px;
+  height: auto;
+}
