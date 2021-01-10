@@ -10,6 +10,16 @@ html {
   background-attachment: fixed;
 }
 
+h1 {
+  transition: .3s;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  font-size: 2.1rem;
+  font-weight: 700;
+  color: rgba(22, 75, 92, 0.9);
+}
+
 header {
   transition: .3s;
   z-index: 5;
@@ -29,8 +39,6 @@ header > h1 {
   margin-bottom: 1rem;
   font-size: 2.1rem;
   text-align: center;
-  font-weight: 700;
-  color: rgba(22, 75, 92, 0.9);
 }
 
 nav {
