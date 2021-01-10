@@ -1,56 +1,122 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-@font-face {
-  font-family: Metropolis;
-  src: url(font/Metropolis-Regular.otf);
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: Metropolis;
-  src: url(font/Metropolis-RegularItalic.otf);
-  font-weight: 400;
-  font-style: italic;
-}
-@font-face {
-  font-family: Metropolis;
-  src: url(font/Metropolis-Medium.otf);
-  font-weight: 600;
-  font-style: normal;
-}
-@font-face {
-  font-family: Metropolis;
-  src: url(font/Metropolis-MediumItalic.otf);
-  font-weight: 600;
-  font-style: italic;
-}
-/* FONT */
-h1, h2, h3 {
-  font-family: Metropolis, sans-serif;
-  font-weight: 400;
-}
-h4, h5, h6 {
-  font-family: 'IBM Plex Serif', serif;
-  font-weight: 400;
-  font-style: italic;
-  color: rgba(119,119,119,1);
-}
-nav > * {
-  font-family: Metropolis, sans-serif;
-  font-weight: 600;
-}
-button {
-  font-family: Metropolis, sans-serif;
-  font-weight: 600;
-}
-p {
-  font-family: 'IBM Plex Serif', serif;
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@300;400;500;600;700;900&display=swap');
+
+html {
+  font-family: "Spartan", sans-serif;
+  height: 100%;
+  background-color: grey;
+  background-image: url(../img/bg/2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: rgba(22, 75, 92, 0.9);
 }
 
-nav > ul {
-  list-style: none;
+h1 {
+  transition: .3s;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  font-size: 2.1rem;
+  font-weight: 700;
+}
+h2 {
+  transition: .3s;
+  margin: 1.2rem auto .8rem;
+  line-height: 2.4rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+h3 {
+  margin: 1.5rem auto 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 
-/* COMPONENTS */
-#primary-btn {
+header {
+  transition: .3s;
+  z-index: 5;
+  position: fixed;
+  width: 88%;
+  height: 9.5rem;
+  left: 5%;
+  top: 2%;
+  border-radius: 30px;
+  background: linear-gradient(165deg, rgba(255, 255, 255, .8), rgba(255, 255, 255, .4));
+  backdrop-filter: blur(30px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, .4);
+}
+header > h1 {
+  transition: .3s;
+  margin-top: 1.8rem;
+  margin-bottom: 1rem;
+  font-size: 2.1rem;
+  text-align: center;
+}
 
+nav {
+  display: grid;
+  grid-template-columns: 24% 24% 24% 24%;
+  grid-template-areas: "a a a a";
+  justify-content: center;
+}
+nav > a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-family: "Spartan", sans-serif;
+  font-weight: 600;
+  color: rgba(22, 75, 92, .7);
+}
+nav > a > p {
+  margin-top: .5rem;
+  transition: .3s;
+}
+nav > a > svg {
+  width: 30px;
+  height: 30px;
+}
+
+footer {
+
+}
+
+.glass {
+  width: 92%;
+  margin-left: 3%;
+  margin-top: 3rem;
+  border-radius: 30px;
+  background: linear-gradient(165deg, rgba(255, 255, 255, .64), rgba(255, 255, 255, .16));
+  backdrop-filter: blur(20px);
+}
+.current {
+  color: rgba(22, 75, 92, 1);
+}
+
+.center {
+  display: block;
+  width: 90%;
+  margin: auto;
+}
+
+#content {
+  margin-top: 12.5rem;
+  height: 38rem;
+}
+#more {
+  height: 20rem;
+}
+
+#welcome {
+  width: 88%;
+  margin: auto;
+  padding-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+#welcome > img {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
 }
