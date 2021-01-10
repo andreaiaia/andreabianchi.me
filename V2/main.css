@@ -34,8 +34,10 @@ header > h1 {
 }
 
 nav {
-  display: flex;
-  justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  grid-template-areas: "a a a";
+  justify-content: center;
 }
 nav > a {
   display: flex;
