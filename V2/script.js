@@ -1,4 +1,8 @@
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function() {
+  if (document.documentElement.clientWidth < 800) {
+    scrollFunction();
+  }
+};
 
 function scrollFunction() {
   const title = document.querySelector("#title");

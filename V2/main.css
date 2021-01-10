@@ -35,8 +35,8 @@ header > h1 {
 
 nav {
   display: grid;
-  grid-template-columns: 30% 30% 30%;
-  grid-template-areas: "a a a";
+  grid-template-columns: 24% 24% 24% 24%;
+  grid-template-areas: "a a a a";
   justify-content: center;
 }
 nav > a {
@@ -58,23 +58,21 @@ nav > a > svg {
   height: 30px;
 }
 
-#content {
+.glass {
   position: absolute;
   width: 88%;
-  height: 72%;
   left: 5%;
-  top: 26%;
   border-radius: 30px;
   background: linear-gradient(165deg, rgba(255, 255, 255, .64), rgba(255, 255, 255, .16));
   backdrop-filter: blur(20px);
 }
+
+#content {
+  height: 72%;
+  top: 26%;
+}
+
 #more {
-  position: absolute;
-  width: 88%;
   height: 50%;
-  left: 5%;
   top: 105%;
-  border-radius: 30px;
-  background: linear-gradient(165deg, rgba(255, 255, 255, .64), rgba(255, 255, 255, .16));
-  backdrop-filter: blur(20px);
 }
