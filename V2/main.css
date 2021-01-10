@@ -11,7 +11,7 @@ html {
 }
 
 header {
-  transition: 0.3s;
+  transition: .3s;
   z-index: 5;
   position: fixed;
   width: 88%;
@@ -24,7 +24,7 @@ header {
   box-shadow: 0 10px 20px rgba(0, 0, 0, .4);
 }
 header > h1 {
-  transition: 0.3s;
+  transition: .3s;
   margin-top: 1.8rem;
   margin-bottom: 1rem;
   font-size: 2.1rem;
@@ -74,4 +74,8 @@ nav > a > svg {
   border-radius: 30px;
   background: linear-gradient(165deg, rgba(255, 255, 255, .64), rgba(255, 255, 255, .16));
   backdrop-filter: blur(20px);
+}
+
+.navp {
+  transition: .3s;
 }
