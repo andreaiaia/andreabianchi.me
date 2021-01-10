@@ -13,6 +13,10 @@ function scrollFunction() {
     title.style.marginBottom = ".6rem";
 
     navp.forEach(element => {
+      element.style.opacity = "0";
+      // element.style.display = "none";      
+    });
+    navp.forEach(element => {
       element.style.display = "none";      
     });
   } else {
@@ -23,7 +27,10 @@ function scrollFunction() {
     title.style.marginBottom = "1rem";
 
     navp.forEach(element => {
+      element.style.opacity = "1";
+    });
+    navp.forEach(element => {
       element.style.display = "block";      
-    });  
+    });
   }
 }
