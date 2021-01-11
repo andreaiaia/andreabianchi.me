@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Spartan:wght@300;400;500;600;700;900&display=swap');
 
+:root {
+  --text-color: rgba(22, 75, 92, .9);
+  --active-text: rgba(22, 75, 92, 1);
+  --secondary-text: rgba(22, 75, 92, .7);
+}
+
 html {
   font-family: "Spartan", sans-serif;
   height: 100%;
@@ -8,7 +14,7 @@ html {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  color: rgba(22, 75, 92, 0.9);
+  color: var(--text-color);
 }
 
 h1 {
@@ -26,9 +32,21 @@ h2 {
   font-weight: 600;
 }
 h3 {
-  margin: 1.5rem auto 1rem;
+  margin: 1.5rem auto 0;
   font-size: 1.5rem;
   font-weight: 600;
+}
+h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: .5rem auto 1rem;
+}
+a {
+  text-decoration: none;
+  font-family: "Spartan", sans-serif;
+}
+button {
+  font-family: "Spartan", sans-serif;
 }
 
 header {
@@ -63,10 +81,9 @@ nav > a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-decoration: none;
   font-family: "Spartan", sans-serif;
   font-weight: 600;
-  color: rgba(22, 75, 92, .7);
+  color: var(--secondary-text);
 }
 nav > a > p {
   margin-top: .5rem;
@@ -82,6 +99,7 @@ footer {
 }
 
 .glass {
+  padding-bottom: 1.5rem;
   width: 92%;
   margin-left: 3%;
   margin-top: 3rem;
@@ -90,18 +108,32 @@ footer {
   backdrop-filter: blur(20px);
 }
 .current {
-  color: rgba(22, 75, 92, 1);
+  color: var(--active-text);
 }
 
 .center {
   display: block;
-  width: 90%;
   margin: auto;
+}
+.h {
+  width: 90%;
+}
+
+.buttonlink {
+  padding: .6rem;
+  text-decoration: none;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 4px 5px 7px 1px rgba(0, 0, 0, 0.52);
+  background: linear-gradient(110deg, rgba(172, 223, 239, .8), rgba(245, 251, 253, .8));
+}
+.buttonlink > a {
+  color: var(--text-color);
 }
 
 #content {
   margin-top: 12.5rem;
-  height: 38rem;
 }
 #more {
   height: 20rem;
@@ -121,12 +153,10 @@ footer {
   border-radius: 50%;
 }
 
-#privacy {
-  display: grid;
-  grid-template-columns: 1;
-  grid-template-rows: 1;
+#privacy > div {
+  display: flex;
 }
-#privacy > svg {
-  width: 200px;
+#privacy > div > svg {
+  width: 250px;
   height: auto;
 }
