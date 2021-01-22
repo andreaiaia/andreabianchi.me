@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Spartan:wght@300;400;500;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400;1,500&display=swap');
 
 :root {
   --text-color: rgba(22, 75, 92, .9);
@@ -6,10 +7,12 @@
   --secondary-text: rgba(22, 75, 92, .7);
   --button-color: rgba(21, 132, 252, 1);
   --button-text: rgba(255,255,255,1);
+  --quote: rgba(22, 75, 92, .8);
 }
 
 html {
   font-family: "Spartan", sans-serif;
+  font-weight: 500;
   height: 100%;
   background-color: grey;
   background-image: url(../img/bg/2.jpg);
@@ -60,20 +63,21 @@ button > * {
 }
 
 .glass {
-  width: 88%;
-  margin-left: 5%;
-  margin-top: 3rem;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 2rem;
   border-radius: 30px;
   background: linear-gradient(165deg, rgba(255, 255, 255, .64), rgba(255, 255, 255, .16));
   backdrop-filter: blur(20px);
 }
 
-header {
+#header {
+  margin-left: 5%;
   transition: .3s;
   z-index: 5;
   position: fixed;
   height: 9rem;
-  top: -5%;
+  top: 3%;
   margin-top: 0;
   padding-bottom: 1rem;
   background: linear-gradient(165deg, rgba(255, 255, 255, .8), rgba(255, 255, 255, .4));
@@ -113,9 +117,14 @@ main {
 
 footer {
   width: 100%;
-  margin-top: 3rem;
+  margin-top: 1rem;
   background: linear-gradient(165deg, rgba(255, 255, 255, .64), rgba(255, 255, 255, .16));
   backdrop-filter: blur(20px);
+}
+
+blockquote {
+  margin: 0;
+  padding: 0;
 }
 
 .content {
@@ -160,6 +169,30 @@ footer {
   height: auto;
 }
 
+.quote {
+  font-family: 'Lora', serif;
+  color: var(--quote);
+}
+.quote > h3 {
+  text-align: center;
+}
+.quote > h4 {
+  text-align: end;
+}
+.social-links {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 2rem auto;
+}
+.social-links > a > img {
+  width: 3rem;
+  height: 3rem;
+}
+.credits > a {
+  color: var(--active-text);
+  font-weight: 700;
+}
+
 #f-content {
   padding: 1.5rem;
 }
@@ -179,25 +212,4 @@ footer {
   width: 110px;
   height: 110px;
   border-radius: 50%;
-}
-
-#photography > .content > div {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  margin-bottom: .5rem;
-}
-#photography > .content > a > button {
-  display: flex;
-  align-items: flex-end;
-}
-#photography > .content > a > button > svg {
-  margin-left: .5rem;
-}
-
-.filmpic {
-  margin: .5rem;
-  transform: rotate(10deg);
-  width: 100px;
-  height: 100%;
 }
