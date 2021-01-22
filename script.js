@@ -10,7 +10,7 @@ function scrollFunction() {
   const navp = document.querySelectorAll(".navp");
 
   if (document.body.scrollTop > 35 || document.documentElement.scrollTop > 35) {
-    head.style.height = "6.5rem";
+    head.style.height = "6rem";
 
     title.style.fontSize = "1.7rem";
     title.style.marginTop = "1.1rem";
@@ -24,7 +24,7 @@ function scrollFunction() {
       element.style.display = "none";      
     });
   } else {
-    head.style.height = "9.5rem";
+    head.style.height = "9rem";
 
     title.style.fontSize = "2.1rem";
     title.style.marginTop = "1.8rem";
