@@ -10,12 +10,21 @@
   --quote: rgba(22, 75, 92, .8);
 }
 
+#fiore {
+  background-image: url(../img/bg/2.jpg);
+}
+#montisola {
+  background-image: url(../img/bg/3.jpg);
+}
+#tramonto {
+  background-image: url(../img/bg/1.jpg);
+}
+
 html {
   font-family: "Spartan", sans-serif;
   font-weight: 500;
   height: 100%;
   background-color: grey;
-  background-image: url(../img/bg/2.jpg);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -123,7 +132,8 @@ footer {
 }
 
 blockquote {
-  margin: 0;
+  display: inline-block;
+  margin: auto;
   padding: 0;
 }
 
@@ -213,3 +223,10 @@ blockquote {
   height: 110px;
   border-radius: 50%;
 }
+/* 
+@media () {
+  .centerquote {
+    width: max-content;
+    margin: auto;
+  }
+} */
