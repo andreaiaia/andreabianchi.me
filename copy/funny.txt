@@ -1,10 +1,6 @@
-I'm a 24 years old man from Italy, Europe!
-
-I absolutely love putting my party in awful situations in Dungeons & Dragons, I enjoy reading and binge-watching my favourite TV shows.
-
-I always loved Photography and Coding. Now I study CS science at the University of Bologna and I create websites in my free time. Oh, almost forgot, I shoot film! (apparently I am legally obliged to say it, it's part of some kind of film shooters code).
-
-Anyway the slider says this is the funny bio, so here is a joke:
-
-A doctor, an architect and a programmer talk about their professions. "Mine is the oldest", says the doctor, "as everybody knows God created Eve from the rib of Adam, and that's definitely a medical operation". "Right", says the architect, "but in fact architect is even older - it's definitely an architectural project to create the world from chaos". At this point the programmer kicks back in the chair and gives friends a mysterious look. "Who, do you think, created the chaos?".
-
+<p>I'm a 24 years old man from <em>Italy</em>, 🇪🇺</p>
+            <p>I absolutely love putting my party in awful situations in <em>Dungeons & Dragons</em>, reading and binge-watching my favourite TV shows.</p>
+            <p>I always loved <em>Photography</em> and <em>Coding</em>. Now I study CS science at the University of Bologna and I create websites in my free time. Oh, almost forgot, <em>I shoot on film!</em> (apparently I am legally obliged to say it, it's part of some kind of film shooters code).</p>
+            <p>Anyway the slider says this is the funny bio, so here is a <em>joke</em>:</p>
+            <p>A doctor, an architect and a programmer talk about their professions. "Mine is the oldest", says the doctor, "as everybody knows God created Eve from the rib of Adam, and that's definitely a medical operation". "Right", says the architect, "but in fact architecture is even older - it's definitely an architectural project to create the world from chaos". At this point the programmer kicks back in the chair and gives friends a mysterious look. "Who do you think <em>created the chaos?</em>".</p>
+            

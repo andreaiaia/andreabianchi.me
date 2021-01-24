@@ -1,7 +1,5 @@
-I am a 24 years old developer from Italy.
-
-I am proficient with HTML, CSS, JS and I know how to use softwares like Adobe Photoshop and Lightroom, VS Code, Various Linux distros, Git and Github and, for all my notes and docs, I use Notion.
-
-I always liked coding and photography and I graduated in 2019 in Communication Science at the Alma Mater Studiorum - University of Bologna.
-
-I prefered to proceed and get a new degree in Computer Science - for which I am currently studying - and in the meanwhile I got a job at a law firm in Matera; my current task here is to take care of the social account and make a website of my employer.
+<p>I am a 24 years old developer from Italy.</p>
+            <p>I am proficient with <em>HTML, CSS, JS</em> and I know how to use softwares like Adobe <em>Photoshop</em> and <em>Lightroom</em>, VS Code, various <em>Linux</em> distros, <em>Git</em> and Github and, for all my notes and docs, I use Notion.</p>
+            <p>I always liked coding and photography, and I graduated in 2019 in Communication Science at the Alma Mater Studiorum - University of Bologna.</p>
+            <p>I decided to proceed and get a new degree in Computer Science - for which I am currently studying - and in the meantime I got a job at a law firm in Matera; <em>my current task</em> here is to take care of social account and make a website of my employer.</p>
+            
