@@ -129,7 +129,7 @@ main {
   margin-top: 13rem;
 }
 
-footer {
+#footer {
   width: 100%;
   margin-top: 1rem;
   background: linear-gradient(165deg, rgba(255, 255, 255, .7), rgba(255, 255, 255, .7));
@@ -150,13 +150,13 @@ blockquote {
   margin: 1.5rem 0;
 }
 ul {
-  list-style-type: none;
-  padding-left: 1rem;
-  margin: .5rem 0;
+  list-style-type: hiragana;
+}
+li {
+  margin-bottom: .5rem;
 }
 li > a {
   color: var(--text-color);
-  text-decoration: underline;
 }
 
 #f-content {
@@ -292,7 +292,7 @@ li > a {
 
 /* 
 @-moz-document url-prefix() {
-  footer, .glass {
+  #footer, .glass {
     background: linear-gradient(165deg, rgba(255, 255, 255, .9), rgba(255, 255, 255, .6));
   }
 }
