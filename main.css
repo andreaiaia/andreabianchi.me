@@ -290,6 +290,11 @@ li > a {
   margin-bottom: .5rem;
 }
 
+@media screen and (max-device-width: 480px) {  /* fix for bg dimension on iphone */
+  header {
+    background-attachment: scroll;
+  }
+}
 /* 
 @-moz-document url-prefix() {
   #footer, .glass {
