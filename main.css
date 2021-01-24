@@ -194,6 +194,16 @@ li > a {
   margin-right: auto;
 }
 
+#not_found {
+  text-align: center;
+}
+#not_found > img {
+  display: block;
+  margin: auto;
+  width: 90%;
+  border-radius: 50%;
+}
+
 .content {
   padding: 1rem;
 }
