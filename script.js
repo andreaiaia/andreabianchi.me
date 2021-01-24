@@ -48,6 +48,32 @@ function init_footer() {
 
 init_footer();
 
+const wrap = document.querySelector("#range_wrap");
+const range = wrap.querySelector(".slider");
+const bubble = wrap.querySelector(".bubble");
+
+range.addEventListener("input", () => {
+  setBubble(range, bubble);
+});
+setBubble(range, bubble);
+
+function setBubble(range, bubble) {
+  const val = range.value;
+  const min = range.min ? range.min : 1;
+  const max = range.max ? range.max : 100;
+  const newVal = Number(((val - min) * 100) / (max - min));
+  if (val > 66) {
+    bubble.innerHTML = "business";
+  } else if (val > 33 && val <= 66) {
+    bubble.innerHTML = "balanced";
+  } else {
+    bubble.innerHTML = "funny";
+  }
+  // Sorta magic numbers based on size of the native UI thumb
+  bubble.style.left = `calc(${newVal}% + (${8 - newVal * 0.15}px))`;
+}
+
+
 window.onscroll = function() {
   if (document.documentElement.clientWidth < 800) {
     scrollFunction();

@@ -49,14 +49,17 @@
     </nav>
   </header>
   <main>
-    <section class="glass">
+    <section id="about_me" class="glass">
       <div class="content">
-        <div id="about_me">
           <h2>About me</h2>
           <img src="img/profile/proPic.jpg" alt="A picture of me, Andrea!">
+        <div id="interactive_bio">
+          <h3 class="center-text">Tweak my bio.</h3>
+          <div id="range_wrap">
+            <input type="range" min="1" max="100" value="50" class="slider">
+            <output class="bubble"></output>
+          </div>
         </div>
-        <div class="center h"><h3>I'm a CS student and front-end web dev.</h3></div>
-        <input type="range" min="1" max="150" value="75" class="slider">
       </div>
     </section>
     <!-- <section id="privacy" class="glass">

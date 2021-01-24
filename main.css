@@ -2,11 +2,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400;1,500&display=swap');
 
 :root {
-  --text-color: rgba(3, 64, 85, 0.9);
-  --active-text: rgba(3, 64, 85, 1);
+  --primary-text: rgba(3, 64, 85, 0.9);
   --secondary-text: rgba(5, 80, 105, 0.6);
+  --active-text: rgba(3, 64, 85, 1);
   --button-color: rgba(21, 132, 252, 1);
+  --button-op: rgba(21, 132, 252, .8);
   --button-text: rgba(255,255,255,1);
+  --button-text-op: rgba(255,255,255,.9);
   --quote: rgba(22, 75, 92, .8);
 }
 
@@ -32,7 +34,7 @@ html {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  color: var(--text-color);
+  color: var(--primary-text);
 }
 body {
   margin: 0;
@@ -157,7 +159,7 @@ li {
   margin-bottom: .5rem;
 }
 li > a {
-  color: var(--text-color);
+  color: var(--primary-text);
   font-weight: 600;
 }
 
@@ -186,7 +188,7 @@ li > a {
 
 #projects > a {
   display: block;
-  color: var(--text-color);
+  color: var(--primary-text);
 }
 
 #projects > a > * {
@@ -206,15 +208,16 @@ li > a {
   border-radius: 50%;
 }
 
-#about_me {
+#about_me > div {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-#about_me > img {
-  width: 290px;
+#about_me > div > img {
+  width: 250px;
   border-radius: 50%;
+  margin-bottom: 1rem;
 }
 
 .content {
@@ -228,6 +231,9 @@ li > a {
 .center {
   display: block;
   margin: auto;
+}
+.center-text {
+  text-align: center;
 }
 .h {
   width: 90%;
@@ -259,16 +265,20 @@ li > a {
   height: auto;
 }
 
+#interactive_bio {
+  width: 100%;
+}
 .slider {
   -webkit-appearance: none;
   width: 100%;
-  height: 20px;
-  background: #d3d3d3;
+  height: 15px;
+  background: rgba(255, 255, 255, .8);
   outline: none;
   opacity: 1;
   -webkit-transition: .2s;
   transition: opacity .2s;
   border-radius: 30px;
+  border: 2px solid var(--secondary-text);
 }
 .slider::-webkit-slider-thumb {
   -webkit-appearance: none;
@@ -280,7 +290,6 @@ li > a {
   border: 3px solid var(--button-color);
   border-radius: 30px;
 }
-
 .slider::-moz-range-thumb {
   width: 25px;
   height: 25px;
@@ -289,6 +298,22 @@ li > a {
   border: 3px solid var(--button-color);
   border-radius: 30px;
 }
+
+#range_wrap {
+  width: 80%;
+  position: relative;
+  margin: 0 auto 3rem;
+}
+.bubble {
+  background: var(--button-op);
+  color: var(--button-text-op);
+  padding: 4px 12px;
+  position: absolute;
+  border-radius: 4px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 
 .quote {
   font-family: 'Lora', serif;
@@ -311,7 +336,7 @@ li > a {
 }
 .credits > a {
   text-decoration: underline;
-  color: var(--text-color);
+  color: var(--primary-text);
   font-weight: 700;
 }
 
