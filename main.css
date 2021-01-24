@@ -2,9 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400;1,500&display=swap');
 
 :root {
-  --text-color: rgba(22, 75, 92, .9);
-  --active-text: rgba(22, 75, 92, 1);
-  --secondary-text: rgba(22, 75, 92, .7);
+  --text-color: rgba(3, 64, 85, 0.9);
+  --active-text: rgba(3, 64, 85, 1);
+  --secondary-text: rgba(5, 80, 105, 0.6);
   --button-color: rgba(21, 132, 252, 1);
   --button-text: rgba(255,255,255,1);
   --quote: rgba(22, 75, 92, .8);
@@ -15,6 +15,9 @@
 }
 #montisola {
   background-image: url(../img/bg/3.webp);
+}
+#montisola > .glass {
+  background: linear-gradient(165deg, rgba(255, 255, 255, .64), rgba(255, 255, 255, .4));
 }
 #tramonto {
   background-image: url(../img/bg/1.webp);
@@ -78,6 +81,7 @@ button > * {
   border-radius: 30px;
   background: linear-gradient(165deg, rgba(255, 255, 255, .64), rgba(255, 255, 255, .36));
   backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
 }
 
 #header {
@@ -127,8 +131,8 @@ main {
 footer {
   width: 100%;
   margin-top: 1rem;
-  background: linear-gradient(165deg, rgba(255, 255, 255, .64), rgba(255, 255, 255, .16));
-  backdrop-filter: blur(20px);
+  background: linear-gradient(165deg, rgba(255, 255, 255, .7), rgba(255, 255, 255, .7));
+  backdrop-filter: blur(15px);
 }
 
 blockquote {
@@ -232,12 +236,9 @@ blockquote {
   width: 3rem;
   height: 3rem;
 }
-.credits {
-  color: rgba(240, 240, 240, 1);
-}
 .credits > a {
   text-decoration: underline;
-  color: rgba(240, 240, 240, 1);
+  color: var(--text-color);
   font-weight: 700;
 }
 
@@ -271,6 +272,12 @@ blockquote {
 }
 
 /* 
+@-moz-document url-prefix() {
+  footer, .glass {
+    background: linear-gradient(165deg, rgba(255, 255, 255, .9), rgba(255, 255, 255, .6));
+  }
+}
+
 @media () {
   .centerquote {
     width: max-content;
