@@ -28,6 +28,7 @@ html {
   font-weight: 500;
   height: 100%;
   background-color: grey;
+  background-image: url(img/bg/2.webp);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -157,6 +158,7 @@ li {
 }
 li > a {
   color: var(--text-color);
+  font-weight: 600;
 }
 
 #f-content {
@@ -204,6 +206,17 @@ li > a {
   border-radius: 50%;
 }
 
+#about_me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#about_me > img {
+  width: 290px;
+  border-radius: 50%;
+}
+
 .content {
   padding: 1rem;
 }
@@ -244,6 +257,37 @@ li > a {
 .privacy > div > svg {
   width: 250px;
   height: auto;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 20px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 1;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+  border-radius: 30px;
+}
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: var(--button-color);
+  cursor: pointer;
+  border: 3px solid var(--button-color);
+  border-radius: 30px;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: var(--button-color);
+  cursor: pointer;
+  border: 3px solid var(--button-color);
+  border-radius: 30px;
 }
 
 .quote {
@@ -316,5 +360,8 @@ li > a {
   .centerquote {
     width: max-content;
     margin: auto;
+  }
+  .slider:hover {
+    opacity: 1;
   }
 } */
