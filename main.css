@@ -235,6 +235,15 @@ input {
   position: relative;
   margin: 0 auto 1.5rem;
 }
+#bio > div {
+  transition: opacity .5s ease;
+}
+#business {
+  display: none;
+}
+#funny {
+  display: none;
+}
 
 #socials {
   margin-left: 1rem;
@@ -419,24 +428,39 @@ input {
   margin-bottom: .5rem;
 }
 
-@media screen and (max-device-width: 480px) {  /* fix for bg dimension on iphone */
-  header {
-    background-attachment: scroll;
-  }
-}
 /* 
 @-moz-document url-prefix() {
   #footer, .glass {
     background: linear-gradient(165deg, rgba(255, 255, 255, .9), rgba(255, 255, 255, .6));
   }
 }
+*/
 
-@media () {
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  header {
+    background-attachment: scroll;
+  }
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+  /* Styles */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+  /* Styles */
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width : 1224px) {
   .centerquote {
     width: max-content;
     margin: auto;
   }
+
   .slider:hover {
     opacity: 1;
   }
-} */
+}
