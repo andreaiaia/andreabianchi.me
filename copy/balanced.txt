@@ -1,6 +1,6 @@
 <p>Hi, I'm a 24-year-old CS student and web developer from <em>Italy</em>, Europe! 🇪🇺 </p>
             <p>I graduated in 2019 in Communication Science at the Alma Mater Studiorum - University of Bologna. </p>
-            <p>Instead of continuing with a master's degree (I didn't like the ones available) I chose to start a <em>new degree</em> in Computer Science, which I am currently studying.</p>
+            <p>Instead of continuing with a master's degree (I didn't like the ones available) I chose to start a <em>new degree</em> in Computer Science, for which I am currently studying.</p>
             <p>In the meanwhile I learned <em>HTML, CSS and JS</em> and I create websites, like this one!</p>
             <!-- <p>I take my privacy very seriously and I like to help others protect their as well, that's why I started my own privacy-focused podcast: INSERT_NAME_HERE.</p> -->
             

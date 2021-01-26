@@ -35,10 +35,8 @@ function init_footer() {
         <div class="hr">
           Special thanks to:
           <ul>
-            <li><a href="https://illlustrations.co/">@realvjy</a> for the illustrations.</li>
-            <li><a href="https://delesign.com/free-designs/graphics/">delesign.com</a> for the illustrations.</li>
-            <li><a href="https://lukaszadam.com/illustrations">lukaszadam</a> for the illustrations.</li>
-            <li><a href="https://css.gg">css.gg</a> for the icons.</li>
+            <li><a href="https://illlustrations.co/">@realvjy</a>, <a href="https://delesign.com/free-designs/graphics/">delesign.com</a>, <a href="https://lukaszadam.com/illustrations">lukaszadam</a> for the illustrations.</li>
+            <li><a href="https://css.gg">css.gg</a>, <a href="https://delesign.com/free-designs/graphics/">Delesign</a> for the icons.</li>
           </ul>
         </div>
       </div>

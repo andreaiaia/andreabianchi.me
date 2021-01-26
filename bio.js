@@ -36,13 +36,13 @@ function setBio(range) {
     bio.innerHTML = `<p>I am a 24-year-old developer from Italy.</p>
             <p>I am proficient with <em>HTML, CSS, JS</em> and I know how to use software like Adobe <em>Photoshop</em> and <em>Lightroom</em>, VS Code, various <em>Linux</em> distros, <em>Git</em> and Github and, for all my notes and docs, I use Notion.</p>
             <p>I always liked coding and photography, and I graduated in 2019 in Communication Science at the Alma Mater Studiorum - University of Bologna.</p>
-            <p>I decided to proceed and get a new degree in Computer Science - for which I am currently studying - and in the meantime I got a job at a law firm in Matera; <em>my current task</em> here is to take care of social account and make a website of my employer.</p>
+            <p>I decided to proceed and get a new degree in Computer Science, for which I am currently studying. In the meantime I got a job at a law firm in Matera; where I take care of social media accounts and make a website of my employer.</p>
             `;
   } else if (val > 33 && val <= 66) { // balanced
     // pic.src = "img/profile/balanced.jpg";
     bio.innerHTML = `<p>Hi, I'm a 24-year-old CS student and web developer from <em>Italy</em>, Europe! 🇪🇺 </p>
             <p>I graduated in 2019 in Communication Science at the Alma Mater Studiorum - University of Bologna. </p>
-            <p>Instead of continuing with a master's degree (I didn't like the ones available) I chose to start a <em>new degree</em> in Computer Science, which I am currently studying.</p>
+            <p>Instead of continuing with a master's degree (I didn't like the ones available) I chose to start a <em>new degree</em> in Computer Science, for which I am currently studying.</p>
             <p>In the meanwhile I learned <em>HTML, CSS and JS</em> and I create websites, like this one!</p>
             <!-- <p>I take my privacy very seriously and I like to help others protect their as well, that's why I started my own privacy-focused podcast: INSERT_NAME_HERE.</p> -->
             `;
