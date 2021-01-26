@@ -29,7 +29,7 @@ html {
   font-family: "Spartan", sans-serif;
   font-weight: 500;
   height: 100%;
-  background-color: grey;
+  background-color: var(--button-op);
   background-image: url(img/bg/1.webp);
   background-position: center;
   background-size: cover;
@@ -39,6 +39,16 @@ html {
 body {
   margin: 0;
   padding: 0;
+  overscroll-behavior: none;
+}
+.glass {
+  width: 90%;
+  margin: auto;
+  margin-bottom: 2rem;
+  border-radius: 30px;
+  background: linear-gradient(165deg, rgba(255, 255, 255, .64), rgba(255, 255, 255, .36));
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
 }
 
 h1 {
@@ -72,6 +82,7 @@ em {
 a {
   text-decoration: none;
   font-family: "Spartan", sans-serif;
+  color: var(--primary-text);
 }
 button {
   font-family: "Spartan", sans-serif;
@@ -81,28 +92,6 @@ button > * {
   color: var(--button-text);
 }
 
-.glass {
-  width: 90%;
-  margin: auto;
-  margin-bottom: 2rem;
-  border-radius: 30px;
-  background: linear-gradient(165deg, rgba(255, 255, 255, .64), rgba(255, 255, 255, .36));
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-}
-
-#header {
-  margin-left: 5%;
-  transition: .3s;
-  z-index: 5;
-  position: fixed;
-  height: 9rem;
-  top: 3%;
-  margin-top: 0;
-  padding-bottom: 1rem;
-  background: linear-gradient(165deg, rgba(255, 255, 255, .8), rgba(255, 255, 255, .4));
-  box-shadow: 0 10px 20px rgba(0, 0, 0, .4);
-}
 header > h1 {
   transition: .1s;
   font-size: 2.1rem;
@@ -136,14 +125,6 @@ main {
   margin-top: 13rem;
 }
 
-#footer {
-  width: 100%;
-  margin-top: 1rem;
-  background: linear-gradient(165deg, rgba(255, 255, 255, .7), rgba(255, 255, 255, .7));
-  backdrop-filter: blur(15px);
-  -webkit-backdrop-filter: blur(20px);
-}
-
 blockquote {
   display: inline-block;
   margin: auto;
@@ -156,15 +137,36 @@ blockquote {
   border-bottom: 2px solid var(--secondary-text);
   margin: 1.5rem 0;
 }
-ul {
-  list-style-type: hiragana;
-}
+
 li {
   margin-bottom: .5rem;
 }
 li > a {
-  color: var(--primary-text);
   font-weight: 600;
+}
+input {
+  margin-top: 2.5rem;
+}
+
+#header {
+  margin-left: 5%;
+  transition: .3s;
+  z-index: 5;
+  position: fixed;
+  height: 9rem;
+  top: 3%;
+  margin-top: 0;
+  padding-bottom: 1rem;
+  background: linear-gradient(165deg, rgba(255, 255, 255, .8), rgba(255, 255, 255, .4));
+  box-shadow: 0 10px 20px rgba(0, 0, 0, .4);
+}
+
+#footer {
+  width: 100%;
+  margin-top: 1rem;
+  background: linear-gradient(165deg, rgba(255, 255, 255, .7), rgba(255, 255, 255, .7));
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(20px);
 }
 
 #f-content {
@@ -192,9 +194,7 @@ li > a {
 
 #projects > a {
   display: block;
-  color: var(--primary-text);
 }
-
 #projects > a > * {
   display: block;
   margin-top: .5rem;
@@ -218,20 +218,78 @@ li > a {
   align-items: center;
   justify-content: center;
 }
-#about_me > div > img {
+#interactive_bio {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#interactive_bio > img {
   width: 250px;
   border-radius: 50%;
   margin-bottom: 1rem;
+}
+#range_wrap {
+  width: 80%;
+  position: relative;
+  margin: 0 auto 1.5rem;
+}
+
+#socials {
+  margin-left: 1rem;
+}
+#socials > a {
+  display: flex;
+  align-items: center;
+}
+#socials > a > img {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin: .5rem;
+}
+#curriculum {
+  margin: 1.5rem 0 .5rem;
+}
+#download {
+  display: flex;
+}
+#download > p {
+  margin: auto 0;
+  padding-left: 10px;
+}
+#download > svg {
+  width: 1.5rem;
+  height: auto;
+}
+
+#skills {
+  width: 100%;
+  display: grid;
+}
+
+.skill {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+  border-radius: 20px;
+}
+.logo {
+  display: block;
+  width: 60px;
+  height: auto;
+  padding: .5rem 1.5rem;
+}
+.s_description {
+  flex: 2;
 }
 
 .content {
   padding: 1rem;
 }
-
 .current {
   color: var(--active-text);
 }
-
 .center {
   display: block;
   margin: auto;
@@ -263,15 +321,11 @@ li > a {
 .privacy > div {
   display: flex;
 }
-
 .privacy > div > svg {
   width: 250px;
   height: auto;
 }
 
-#interactive_bio {
-  width: 100%;
-}
 .slider {
   -webkit-appearance: none;
   width: 100%;
@@ -302,12 +356,6 @@ li > a {
   border: 3px solid var(--button-color);
   border-radius: 30px;
 }
-
-#range_wrap {
-  width: 80%;
-  position: relative;
-  margin: 0 auto 1.5rem;
-}
 .bubble {
   background: var(--button-op);
   color: var(--button-text-op);
@@ -317,10 +365,6 @@ li > a {
   left: 50%;
   transform: translateX(-50%);
 }
-input {
-  margin-top: 2.5rem;
-}
-
 
 .quote {
   font-family: 'Lora', serif;
@@ -343,7 +387,6 @@ input {
 }
 .credits > a {
   text-decoration: underline;
-  color: var(--primary-text);
   font-weight: 700;
 }
 
