@@ -51,7 +51,7 @@ init_footer();
 // NAV SHRINK ANIMATION
 
 window.onscroll = function() {
-  if (document.documentElement.clientWidth < 768) {
+  if (document.documentElement.clientWidth > 320 && document.documentElement.clientWidth < 768) {
     scrollFunction();
   }
 };
@@ -77,7 +77,7 @@ function scrollFunction() {
   } else {
     //head.style.height = "9rem";
 
-    title.style.fontSize = "2.1rem";
+    title.style.fontSize = "2rem";
     title.style.marginTop = "1.5rem";
     title.style.marginBottom = "1rem";
 
