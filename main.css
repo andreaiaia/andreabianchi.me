@@ -180,7 +180,7 @@ input {
   grid-area: image;
   justify-self: center;
   align-self: center;
-  width: fit-content;
+  max-width: 120px;
 }
 .grid_h2 {
   grid-area: header2;
@@ -547,6 +547,9 @@ input {
           / 1fr 1fr;
   }
   
+  .grid_svg {
+    max-width: 280px;
+  }
   .thumbnail {
     width: 120px;
     height: 120px;
