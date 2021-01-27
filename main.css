@@ -16,16 +16,16 @@ html {
   font-family: "Spartan", sans-serif;
   font-weight: 500;
   height: 100%;
-  background-color: linear-gradient(165deg, rgb(106, 171, 206), rgb(1, 94, 119));
+}
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(165deg, rgb(106, 171, 206), rgb(1, 94, 119));
   background-image: url(img/bg.webp);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
   color: var(--primary-text);
-}
-body {
-  margin: 0;
-  padding: 0;
   overscroll-behavior: none;
 }
 .glass {
@@ -241,10 +241,10 @@ input {
   justify-content: center;
 }
 #about_me > div {
-  width: 100%;
+  flex: 1;
 }
 #proPic {
-  width: 250px;
+  width: 200px;
   border-radius: 50%;
   margin: 0 auto 1rem;
 }
@@ -457,6 +457,13 @@ input {
   }
 }
 */
+/* All mobile devices */
+@media (pointer:coarse) {
+  body {
+    background-attachment: initial;
+  }
+}
+
 @media only screen and (max-device-width: 320px) {
   nav > a > svg {
     width: 25px;
@@ -553,7 +560,9 @@ input {
   }
 
   #about_me{
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: 464px;
   }
 
   #wip {
