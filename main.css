@@ -15,6 +15,7 @@
 html {
   font-family: "Spartan", sans-serif;
   font-weight: 500;
+  height: 100%;
 }
 body {
   margin: 0;
@@ -137,10 +138,10 @@ input {
   position: fixed;
   top: 0;
   left: 0;
-  height: 100%;
   width: 100%;
+  height: 100vh;
   background-size: 100%;
-  background-image: url(img/bg.webp);
+  background-image: url(img/bg/mobile.webp);
   background-attachment: fixed;
 }
 
@@ -496,6 +497,9 @@ input {
 
 /* iPads */
 @media only screen and (min-device-width : 768px) {
+  #background_wrap {
+    background-image: url(img/bg/tablet.webp);
+  }
   #header {
     display: flex;
     align-items: center;
@@ -618,7 +622,7 @@ input {
 /* Desktops and laptops ----------- */
 @media only screen and (min-width : 1224px) {
   body {
-    background-image: url(img/bg.webp);
+    background-image: url(img/bg/desktop.webp);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
