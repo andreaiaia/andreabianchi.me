@@ -12,28 +12,15 @@
   --quote: rgba(22, 75, 92, .8);
 }
 
-#bg1 {
-  background-image: url(img/bg/1.webp);
-}
-#bg2 {
-  background-image: url(img/bg/2.webp);
-}
-#bg2 > .glass {
-  background: linear-gradient(165deg, rgba(255, 255, 255, .64), rgba(255, 255, 255, .4));
-}
-#bg3 {
-  background-image: url(img/bg/3.webp);
-}
-
 html {
   font-family: "Spartan", sans-serif;
   font-weight: 500;
   height: 100%;
-  background-color: var(--button-op);
-  background-image: url(img/bg/1.webp);
+  background: linear-gradient(165deg, rgb(106, 171, 206), rgb(1, 94, 119));
+  background-image: url(img/bg.webp);
   background-position: center;
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment: scroll;
   color: var(--primary-text);
 }
 body {
@@ -193,6 +180,7 @@ input {
   grid-area: image;
   justify-self: center;
   align-self: center;
+  width: fit-content;
 }
 .grid_h2 {
   grid-area: header2;
@@ -586,6 +574,9 @@ input {
 
 /* Desktops and laptops ----------- */
 @media only screen and (min-width : 1224px) {
+  html {
+    background-attachment: fixed;
+  }
   .centerquote {
     width: max-content;
     margin: auto;
