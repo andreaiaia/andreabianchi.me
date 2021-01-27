@@ -20,7 +20,7 @@ html {
   background-image: url(img/bg.webp);
   background-position: center;
   background-size: cover;
-  background-attachment: scroll;
+  background-attachment: fixed;
   color: var(--primary-text);
 }
 body {
@@ -454,13 +454,6 @@ input {
 }
 */
 
-/* Smartphones (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-  header {
-    background-attachment: scroll;
-  }
-}
-
 /* iPads */
 @media only screen and (min-device-width : 768px) {
   #header {
@@ -577,9 +570,6 @@ input {
 
 /* Desktops and laptops ----------- */
 @media only screen and (min-width : 1224px) {
-  html {
-    background-attachment: fixed;
-  }
   .centerquote {
     width: max-content;
     margin: auto;
