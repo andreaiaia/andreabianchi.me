@@ -599,7 +599,7 @@ input {
 }
 
 /* iPad Pro 12.9inch ----------- */
-@media only screen and (min-device-width : 1024px){
+@media only screen and (min-width : 1024px){
   #header {
     margin-left: 8.5%;
   }
