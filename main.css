@@ -15,16 +15,11 @@
 html {
   font-family: "Spartan", sans-serif;
   font-weight: 500;
-  height: 100%;
 }
 body {
   margin: 0;
   padding: 0;
   background: linear-gradient(165deg, rgb(106, 171, 206), rgb(1, 94, 119));
-  background-image: url(img/bg.webp);
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
   color: var(--primary-text);
   overscroll-behavior: none;
 }
@@ -135,6 +130,18 @@ li > a {
 }
 input {
   margin-top: 2.5rem;
+}
+
+#background_wrap {
+  z-index: -1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-size: 100%;
+  background-image: url(img/bg.webp);
+  background-attachment: fixed;
 }
 
 #header {
@@ -610,6 +617,15 @@ input {
 
 /* Desktops and laptops ----------- */
 @media only screen and (min-width : 1224px) {
+  body {
+    background-image: url(img/bg.webp);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+  };
+  #background_wrap {
+    display: none;
+  }
   .centerquote {
     width: max-content;
     margin: auto;
