@@ -16,7 +16,7 @@ html {
   font-family: "Spartan", sans-serif;
   font-weight: 500;
   height: 100%;
-  background: linear-gradient(165deg, rgb(106, 171, 206), rgb(1, 94, 119));
+  background-color: linear-gradient(165deg, rgb(106, 171, 206), rgb(1, 94, 119));
   background-image: url(img/bg.webp);
   background-position: center;
   background-size: cover;
