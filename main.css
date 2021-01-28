@@ -16,11 +16,11 @@ html {
   font-family: "Spartan", sans-serif;
   font-weight: 500;
   height: 100%;
+  background: linear-gradient(165deg, rgb(106, 171, 206), rgb(1, 94, 119));
 }
 body {
   margin: 0;
   padding: 0;
-  background: linear-gradient(165deg, rgb(106, 171, 206), rgb(1, 94, 119));
   color: var(--primary-text);
 }
 /* body:before {
@@ -38,7 +38,7 @@ body {
   -o-background-size: cover;
   background-size: cover;
 } */
-.glass {
+#header, .glass {
   width: 80%;
   padding: 1rem;
   margin: auto;
@@ -614,9 +614,103 @@ input {
 
 /* Desktops and laptops ----------- */
 @media (min-width : 1224px) {
+  body {
+    position: relative;
+    width: 90%;
+    height: 90%;
+    margin: 3% auto;
+    border-radius: 30px;
+    background: linear-gradient(165deg, rgba(255, 255, 255, .64), rgba(255, 255, 255, .36));
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, .4);
+  }
+  main {
+    margin: 0 0 0 auto;
+    width: calc(80% - 4rem);
+    right: 0;
+    padding: 1rem;
+  }
+  nav {
+    width: 80%;
+    flex: 8;
+    grid-template-columns: 1fr;
+    grid-template-rows: 4rem 4rem 4rem 4rem;
+    align-items: start;
+    margin-top: 2rem;
+    margin-left: 2rem;
+  }
+  nav > a {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    justify-items: center;
+  }
+  nav > a > svg {
+    flex: 1;
+  }
+  nav > a > p {
+    flex: 2;
+  }
+  #header {
+    z-index: 1;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 1rem;
+    margin: 0;
+    width: 20%;
+    height: 100%;
+    top: 0;
+    box-shadow: 5px 0px 10px -1px rgba(0, 0, 0, .4);
+    border-radius: 30px 0 0 30px;
+  }
+  #title {
+    flex: 1;
+    text-align: center;
+    font-size: 2.5rem;
+  }
+  #footer {
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: calc(20% + 2rem);
+    height: 40%;
+    background: unset;
+    backdrop-filter: unset;
+    -webkit-backdrop-filter: unset;
+    box-shadow: inset 0 5px 10px -5px rgba(0, 0, 0, .4);
+    border-radius: 0 0 0 30px;
+    overflow-y: auto;
+  }
+
+  .social-links {
+    margin: .5rem 0 1.5rem;
+  }
+  .social-links > a > img {
+    max-width: 40px;
+    max-height: 40px;
+  }
+  .glass {
+    width: auto;
+    padding: 0;
+    border-radius: 0;
+    background: none;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
   .centerquote {
-    width: max-content;
+    width: 100%;
     margin: auto;
+  }
+  .quote > h3 {
+    font-size: 1.3rem;
+  }
+  .quote > h4 {
+    font-size: 1.1rem;
+  }
+  .credits {
+    font-size: .8rem;
   }
 
   .slider:hover {
@@ -625,9 +719,28 @@ input {
 }
 
 @media (pointer:fine) {
-  body {
+  html {
     background-image: url(img/bg/desktop.webp);
     background-size: cover;
     background-attachment: fixed;
+  }
+
+  /* SCROLLBAR */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(0, 0, 0, .2) rgba(0, 0, 0, .1);
+  }
+
+  *::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, .1);
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, .1);
+    border-radius: 10px;
   }
 }
