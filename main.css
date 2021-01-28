@@ -21,8 +21,8 @@ html {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  background-attachment: fixed;
   overscroll-behavior: none;
-  background-attachment: scroll;
 }
 
 body {
@@ -248,10 +248,10 @@ input {
 #proPic {
   width: 200px;
   border-radius: 50%;
-  margin: 0 auto 1rem;
+  margin: 0 3rem 1rem;
 }
 #range_wrap {
-  width: 80%;
+  width: 85%;
   position: relative;
   margin: 0 auto 1.5rem;
 }
@@ -355,7 +355,7 @@ input {
 
 .slider {
   -webkit-appearance: none;
-  width: 100%;
+  width: 97%;
   height: 15px;
   background: rgba(255, 255, 255, .8);
   outline: none;
@@ -474,6 +474,9 @@ input {
   }
   #header {
     padding-bottom: .5rem;
+  }
+  #proPic {
+    margin: 0 2rem 1rem;
   }
   .navp {
     font-size: .9rem;
@@ -620,8 +623,10 @@ input {
   main {
     margin: 0 0 0 auto;
     width: calc(80% - 4rem);
+    height: calc(100% - 2rem);
     right: 0;
     padding: 1rem;
+    overflow-y: scroll;
   }
   nav {
     width: 80%;
