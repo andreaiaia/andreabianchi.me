@@ -16,14 +16,14 @@ html {
   font-family: "Spartan", sans-serif;
   font-weight: 500;
   height: 100%;
-  background: linear-gradient(165deg, rgb(106, 171, 206), rgb(1, 94, 119)) no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
 }
 body {
   margin: 0;
   padding: 0;
   color: var(--primary-text);
+  background: linear-gradient(165deg, rgb(106, 171, 206), rgb(1, 94, 119)) no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 /* body:before {
   content: "";
@@ -717,6 +717,12 @@ input {
 
   .slider:hover {
     opacity: 1;
+  }
+}
+
+@media (pointer:fine) and (max-width : 1224px) {
+  body {
+    background: unset;
   }
 }
 
