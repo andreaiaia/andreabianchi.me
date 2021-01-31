@@ -3,45 +3,42 @@
 function init_footer() {
   const body = document.querySelector("body");
   const footer = document.createElement("footer");
+  footer.id = "footer";
   footer.innerHTML = `
-  <footer id="footer">
-    <div id="f-content">
-      <div class="centerquote">
-        <blockquote class="quote">
-          <h3>"Always try to be nice. Never fail to be kind."</h3>
-          <h4>- The 12th Doctor</h4>
-        </blockquote>
-      </div>
-      <div class="social-links">
-        <a href="https://github.com/andreaiaia">
-          <img src="img\\icons\\github.webp" alt="My Github Page">
-        </a>
-        <a href="https://linkedin.com/in/andreaiaia">
-          <img src="img\\icons\\linkedin.webp" alt="My LinkedIn Page">
-        </a>
-        <a href="mailto:andreaiaia@pm.me">
-          <img src="img\\icons\\mail.webp" alt="Send me an Email">
-        </a>
-        <a href="https://t.me/andreaiaia">
-          <img src="img\\icons\\telegram.webp" alt="Text me on Telegram">
-        </a>
-        <a href="https://instagram.com/andreaiaia">
-          <img src="img\\icons\\instagram.webp" alt="My Instagram Page">
-        </a>
-      </div>
-      <div class="credits">
-        Created by me in plain HTML, CSS, JS.
-        <a href="https://github.com/andreaiaia/andreabianchi.me">See the source code.</a>
-        <div class="hr">
-          Special thanks to:
-          <ul>
-            <li><a href="https://illlustrations.co/">@realvjy</a>, <a href="https://delesign.com/free-designs/graphics/">delesign.com</a>, <a href="https://lukaszadam.com/illustrations">lukaszadam</a> for the illustrations.</li>
-            <li><a href="https://css.gg">css.gg</a>, <a href="https://delesign.com/free-designs/graphics/">Delesign</a> for the icons.</li>
-          </ul>
-        </div>
+    <div class="centerquote">
+      <blockquote class="quote">
+        <h3>"Always try to be nice. Never fail to be kind."</h3>
+        <h4>- The 12th Doctor</h4>
+      </blockquote>
+    </div>
+    <div class="social-links">
+      <a href="https://github.com/andreaiaia">
+        <img src="img\\icons\\github.webp" alt="My Github Page">
+      </a>
+      <a href="https://linkedin.com/in/andreaiaia">
+        <img src="img\\icons\\linkedin.webp" alt="My LinkedIn Page">
+      </a>
+      <a href="mailto:andreaiaia@pm.me">
+        <img src="img\\icons\\mail.webp" alt="Send me an Email">
+      </a>
+      <a href="https://t.me/andreaiaia">
+        <img src="img\\icons\\telegram.webp" alt="Text me on Telegram">
+      </a>
+      <a href="https://instagram.com/andreaiaia">
+        <img src="img\\icons\\instagram.webp" alt="My Instagram Page">
+      </a>
+    </div>
+    <div class="credits">
+      Created by me in plain HTML, CSS, JS.
+      <a href="https://github.com/andreaiaia/andreabianchi.me">See the source code.</a>
+      <div class="hr">
+        Special thanks to:
+        <ul>
+          <li><a href="https://illlustrations.co/">@realvjy</a>, <a href="https://delesign.com/free-designs/graphics/">delesign.com</a>, <a href="https://lukaszadam.com/illustrations">lukaszadam</a> for the illustrations.</li>
+          <li><a href="https://css.gg">css.gg</a>, <a href="https://delesign.com/free-designs/graphics/">Delesign</a> for the icons.</li>
+        </ul>
       </div>
     </div>
-  </footer>
   `;
   body.appendChild(footer);
 }
