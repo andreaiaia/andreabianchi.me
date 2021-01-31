@@ -1,23 +1,23 @@
 #s_html, #s_git {
-  background: linear-gradient(270deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 153, 0, 0.5) 100%);
+  background: linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, rgba(255, 153, 0, 0.5) 100%);
 }
 #s_css {
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(0, 163, 255, 0.5) 100%);
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(0, 163, 255, 0.5) 100%);
 }
 #s_javascript {
-  background: linear-gradient(270deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 230, 0, 0.5) 100%);
+  background: linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, rgba(255, 230, 0, 0.5) 100%);
 }
 #s_photoshop {
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(29, 146, 255, 0.5) 100%);
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(29, 146, 255, 0.5) 100%);
 }
 #s_lightroom {
-  background: linear-gradient(270deg, rgba(255, 255, 255, 0.1) 0%, rgba(0, 255, 255, 0.5) 100%);
+  background: linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, rgba(0, 255, 255, 0.5) 100%);
 }
 #s_figma {
-  background: linear-gradient(270deg, rgba(180, 123, 255, 0.5) 0%, rgba(255, 255, 255, 0.1) 100%);
+  background: linear-gradient(270deg, rgba(180, 123, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
 }
 #s_inkscape {
-  background: linear-gradient(270deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.1) 100%);
+  background: linear-gradient(270deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
 }
 #s_css, #s_photoshop, #s_figma, #s_inkscape {
   text-align: right;
@@ -26,30 +26,30 @@
 @media only screen and (min-device-width : 768px) {
   #s_html,
   #s_git {
-    background: linear-gradient(270deg, rgba(255, 153, 0, 0.5) 0%, rgba(255, 255, 255, 0.1) 100%);
+    background: linear-gradient(270deg, rgba(255, 153, 0, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
   }
 
   #s_css {
-    background: linear-gradient(90deg, rgba(0, 163, 255, 0.5) 0%, rgba(255, 255, 255, 0.1) 100%);
+    background: linear-gradient(90deg, rgba(0, 163, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
   }
 
   #s_javascript {
-    background: linear-gradient(270deg, rgba(255, 230, 0, 0.5) 0%, rgba(255, 255, 255, 0.1) 100%);
+    background: linear-gradient(270deg, rgba(255, 230, 0, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
   }
 
   #s_photoshop {
-    background: linear-gradient(90deg, rgba(29, 146, 255, 0.5) 0%, rgba(255, 255, 255, 0.1) 100%);
+    background: linear-gradient(90deg, rgba(29, 146, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
   }
 
   #s_lightroom {
-    background: linear-gradient(270deg, rgba(0, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.1) 100%);
+    background: linear-gradient(270deg, rgba(0, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
   }
 
   #s_figma {
-    background: linear-gradient(270deg, rgba(255, 255, 255, 0.1) 0%, rgba(180, 123, 255, 0.5) 100%);
+    background: linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, rgba(180, 123, 255, 0.5) 100%);
   }
 
   #s_inkscape {
-    background: linear-gradient(270deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.5) 100%);
+    background: linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 100%);
   }
 }
