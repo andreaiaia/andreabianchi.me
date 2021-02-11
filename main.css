@@ -2,95 +2,96 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400;1,500&display=swap');
 
 :root {
-  --primary-text: rgba(3, 64, 85, 0.9);
-  --secondary-text: rgba(5, 80, 105, 0.6);
-  --active-text: rgba(3, 64, 85, 1);
-  --button-color: rgba(21, 132, 252, 1);
-  --button-op: rgba(21, 132, 252, .8);
-  --button-text: rgba(255,255,255,1);
-  --button-text-op: rgba(255,255,255,.9);
+  --primary: rgba(3, 64, 85, .9);
+  --inactive: rgba(5, 80, 105, .6);
+  --select: rgba(3, 64, 85, 1);
+  --primary_btn: rgba(21, 132, 252, 1);
+  --text_btn: rgba(255, 255, 255, 1);
   --quote: rgba(22, 75, 92, .8);
 }
-
+* {
+  font-family: "Spartan", sans-serif;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: .3s ease;
+}
 html {
   font-family: "Spartan", sans-serif;
-  font-weight: 500;
   height: 100%;
   background: linear-gradient(165deg, rgb(106, 171, 206), rgb(1, 94, 119)) no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
   background-attachment: fixed;
   overscroll-behavior: none;
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  color: var(--primary-text);
+  color: var(--primary);
 }
-#header, .glass {
-  width: 80%;
-  padding: 1rem;
+header {
+  z-index: 5;
+  position: fixed;
+  top: 3%;
+  left: 0;
+  right: 0;
+  width: 90%;
+  padding: 0 1rem 1rem;
   margin: auto;
-  margin-bottom: 2rem;
   border-radius: 30px;
-  background: linear-gradient(165deg, rgba(255, 255, 255, .64), rgba(255, 255, 255, .36));
+  background: linear-gradient(165deg, rgba(255, 255, 255, .8), rgba(255, 255, 255, .4));
+  box-shadow: 0 10px 20px rgba(0, 0, 0, .4);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
 }
 
-h1 {
-  transition: .3s;
-  margin-top: 1.5rem;
-  margin-bottom: 1rem;
-  font-size: 2.1rem;
-  font-weight: 700;
-}
-h2 {
-  transition: .3s;
-  margin: 1.2rem auto 1rem;
-  line-height: 2.4rem;
-  font-size: 1.8rem;
-  font-weight: 600;
+header > h1 {
   text-align: center;
+  font-weight: 700;
+  font-size: 2.2rem;
 }
-h3 {
-  margin: 1rem auto;
-  font-size: 1.5rem;
+
+h1, h2 {
+  margin: 1rem 0;
+}
+
+h3, h4 {
+  margin: .8rem 0;
   font-weight: 600;
 }
-h4 {
-  font-size: 1.2rem;
-  font-weight: 600;
-  margin: .5rem auto 1rem;
+p {
+  font-weight: 500;
 }
 em {
   font-style: normal;
   font-weight: 700;
 }
 a {
-  text-decoration: none;
   font-family: "Spartan", sans-serif;
-  color: var(--primary-text);
+  font-weight: 400;
+  text-decoration: none;
+  color: var(--primary);
 }
 button {
-  font-family: "Spartan", sans-serif;
-  color: var(--button-text);
+  font-weight: 400;
+  padding: .6rem;
+  font-size: 1.2rem;
+  border-radius: 12px;
+  border: 2px solid var(--primary_btn);
+  background: var(--primary_btn);
+  color: var(--text_btn);
 }
-button > * {
-  color: var(--button-text);
+button:hover {
+  cursor: pointer;
+  border: 2px solid white;
+}
+button:active {
+  transform: scale(.95);
 }
 
-header > h1 {
-  transition: .1s;
-  font-size: 2.1rem;
-  text-align: center;
-}
 nav {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
   justify-content: center;
 }
 nav > a {
@@ -98,14 +99,12 @@ nav > a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: "Spartan", sans-serif;
   font-weight: 600;
-  color: var(--secondary-text);
+  color: var(--inactive);
 }
 nav > a > p {
-  margin-top: .5rem;
-  margin-bottom: 0;
-  transition: .3s;
+  margin: .5rem 0 0;
+  font-weight: 600;
 }
 nav > a > svg {
   width: 30px;
@@ -125,11 +124,12 @@ blockquote {
 .hr:before {
   content: " ";
   display: block;
-  border-bottom: 2px solid var(--secondary-text);
+  border-bottom: 2px solid var(--inactive);
   margin: 1.5rem 0;
 }
 
 li {
+  margin-left: 1.5rem;
   margin-bottom: .5rem;
 }
 li > a {
@@ -139,21 +139,9 @@ input {
   margin-top: 2.5rem;
 }
 
-#header {
-  z-index: 5;
-  position: fixed;
-  top: 3%;
-  margin-left: 6%;
-  margin-top: 0;
-  padding: 0 1rem 1rem;
-  background: linear-gradient(165deg, rgba(255, 255, 255, .8), rgba(255, 255, 255, .4));
-  box-shadow: 0 10px 20px rgba(0, 0, 0, .4);
-  transition: .3s;
-}
-
-#footer {
-  width: calc(100% - 2rem);
-  margin-top: 1rem;
+footer {
+  width: 100%;
+  margin-top: 2rem;
   padding: 1rem;
   background: linear-gradient(165deg, rgba(255, 255, 255, .7), rgba(255, 255, 255, .7));
   backdrop-filter: blur(15px);
@@ -187,21 +175,18 @@ input {
 .grid_h3 {
   grid-area: header3;
 }
-.grid_h4 {
-  grid-area: header4;
-}
 .grid_a {
   grid-area: link;
 }
 #privacy {
   display: grid;
   grid-template: 
-        [row1-start] "image header3" auto [row1-end]
-        [row2-start] "header4 header4" auto [row2-end]
+        [row1-start] "image header2" auto [row1-end]
+        [row2-start] "header3 header3" auto [row2-end]
         [row3-start] "link link" auto [row3-end]
         / 2fr 3fr;
 }
-#privacy>div>svg {
+#privacy > div > svg {
   width: 250px;
   height: auto;
 }
@@ -294,6 +279,17 @@ input {
   row-gap: 1rem;
 }
 
+.glass {
+  width: 90%;
+  padding: 1rem;
+  margin: auto;
+  margin-bottom: 2rem;
+  border-radius: 30px;
+  background: linear-gradient(165deg, rgba(255, 255, 255, .64), rgba(255, 255, 255, .36));
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
 .text {
   display: block;
   margin-top: .5rem;
@@ -307,20 +303,22 @@ input {
   border-radius: 20px;
 }
 .logo {
+  flex: 1;
   display: block;
-  width: 60px;
+  width: 40px;
   height: auto;
-  padding: .5rem 1.5rem;
+  padding: .5rem .8rem;
 }
 .s_description {
-  flex: 2;
+  flex: 3;
+  margin-bottom: 10px;
 }
 
 .content {
   padding: 1rem;
 }
 .current {
-  color: var(--active-text);
+  color: var(--select);
 }
 .center {
   display: block;
@@ -333,23 +331,6 @@ input {
   margin-bottom: 1rem;
 }
 
-.buttonlink {
-  transition: .3s;
-  padding: .6rem;
-  text-decoration: none;
-  font-size: 1.2rem;
-  border-radius: 12px;
-  border: 2px solid var(--button-color);
-  background: var(--button-color);
-}
-.buttonlink:hover {
-  cursor: pointer;
-  border: 2px solid var(--button-text);
-}
-.buttonlink:active {
-  transform: scale(.95);
-}
-
 .slider {
   -webkit-appearance: none;
   width: 97%;
@@ -360,34 +341,35 @@ input {
   -webkit-transition: .2s;
   transition: opacity .2s;
   border-radius: 30px;
-  border: 2px solid var(--secondary-text);
+  border: 2px solid var(--inactive);
 }
 .slider::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
   width: 25px;
   height: 25px;
-  background: var(--button-color);
+  background: var(--primary_btn);
   cursor: pointer;
-  border: 3px solid var(--button-color);
+  border: 3px solid var(--primary_btn);
   border-radius: 30px;
 }
 .slider::-moz-range-thumb {
   width: 25px;
   height: 25px;
-  background: var(--button-color);
+  background: var(--primary_btn);
   cursor: pointer;
-  border: 3px solid var(--button-color);
+  border: 3px solid var(--primary_btn);
   border-radius: 30px;
 }
 .bubble {
-  background: var(--button-op);
-  color: var(--button-text-op);
+  background: var(--primary_btn);
+  color: var(--text_btn);
   padding: 4px 12px;
   position: absolute;
   border-radius: 4px;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-55%);
+  transition: none;
 }
 
 .centerquote {
@@ -396,11 +378,12 @@ input {
   margin-bottom: 1rem;
 }
 .quote {
-  font-family: 'Lora', serif;
   color: var(--quote);
 }
 .quote > h3 {
-  text-align: center;
+  font-family: 'Lora', serif;
+  text-align: left;
+  font-size: 1.6rem;
 }
 .quote > h4 {
   text-align: end;
@@ -413,6 +396,9 @@ input {
 .social-links > a > img {
   width: 3rem;
   height: 3rem;
+}
+.credits {
+  font-weight: 500;
 }
 .credits > a {
   text-decoration: underline;
@@ -485,11 +471,10 @@ input {
 
 /* iPads */
 @media only screen and (min-width : 768px) {
-  #header {
+  header {
     display: flex;
     align-items: center;
     padding: .8rem 1rem;
-    margin-left: 8%;
     margin-bottom: 0;
   }
   #title {
@@ -520,13 +505,14 @@ input {
   #privacy {
     display: grid;
     grid-template:
-      [row1-start] "image header3" auto [row1-end] 
-      [row2-start] "image header4" auto [row2-end] 
+      [row1-start] "image header2" auto [row1-end] 
+      [row2-start] "image header3" auto [row2-end] 
       [row3-start] "image link" auto [row3-end] 
       / 2fr 3fr;
   }
-  #privacy > h3 {
-    margin-bottom: 0;;
+  #privacy > h2 {
+    margin-top: 2rem;
+    margin-bottom: 0;
   }
 
   #projects > a {
@@ -592,7 +578,7 @@ input {
 
 /* iPad Pro 12.9inch ----------- */
 @media only screen and (min-width : 1024px){
-  #header {
+  header {
     margin-left: 8.5%;
   }
   main {
@@ -646,29 +632,24 @@ input {
   nav > a > p {
     flex: 2;
   }
-  #header {
+  header {
     z-index: 1;
     flex-direction: column;
     align-items: flex-start;
     padding: 0 1rem;
     margin: 0;
-    width: min(20%, 20rem);
+    width: min(25%, 20rem);
     height: 100%;
     top: 0;
     box-shadow: 5px 0px 10px -1px rgba(0, 0, 0, .4);
     border-radius: 30px 0 0 30px;
   }
-  #title {
-    flex: 1;
-    text-align: center;
-    font-size: 2.5rem;
-  }
-  #footer {
+  footer {
     z-index: 1;
     position: absolute;
     bottom: 0;
     left: 0;
-    width: min(20%, 20rem);
+    width: min(25%, 20rem);
     height: 40%;
     background: unset;
     backdrop-filter: unset;
@@ -677,7 +658,12 @@ input {
     border-radius: 0 0 0 30px;
     overflow-y: auto;
   }
-
+  
+  #title {
+    flex: 1;
+    text-align: center;
+    font-size: 2.5rem;
+  }
   #welcome {
     margin: 0 2rem 1rem;
     grid-column: 1 / span 8;
@@ -690,8 +676,8 @@ input {
     padding: 2rem 1rem;
     border-radius: 30px;
     grid-template: 
-          [row1-start] "header3 image"auto [row1-end] 
-          [row2-start] "header4 image"auto [row2-end] 
+          [row1-start] "header2 image"auto [row1-end] 
+          [row2-start] "header3 image"auto [row2-end] 
           [row3-start] "link image"auto [row3-end] 
           / 4fr 3fr;
     grid-row: 2/3;

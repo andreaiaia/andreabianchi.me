@@ -3,7 +3,6 @@
 function init_footer() {
   const body = document.querySelector("body");
   const footer = document.createElement("footer");
-  footer.id = "footer";
   footer.innerHTML = `
     <div class="centerquote">
       <blockquote class="quote">
@@ -31,13 +30,12 @@ function init_footer() {
     <div class="credits">
       Created by me in plain HTML, CSS, JS.
       <a href="https://github.com/andreaiaia/andreabianchi.me">See the source code.</a>
-      <div class="hr">
+      <div class="hr"></div>
         Special thanks to:
         <ul>
           <li><a href="https://illlustrations.co/">@realvjy</a>, <a href="https://delesign.com/free-designs/graphics/">delesign.com</a>, <a href="https://lukaszadam.com/illustrations">lukaszadam</a> for the illustrations.</li>
           <li><a href="https://css.gg">css.gg</a>, <a href="https://delesign.com/free-designs/graphics/">Delesign</a> for the icons.</li>
         </ul>
-      </div>
     </div>
   `;
   body.appendChild(footer);
@@ -59,8 +57,6 @@ function scrollFunction() {
   const navp = document.querySelectorAll(".navp");
 
   if (document.body.scrollTop > 35 || document.documentElement.scrollTop > 35) {
-    //head.style.height = "6rem";
-
     title.style.fontSize = "1.7rem";
     title.style.marginTop = "1.1rem";
     title.style.marginBottom = ".6rem";
@@ -72,9 +68,7 @@ function scrollFunction() {
       element.style.display = "none";      
     });
   } else {
-    //head.style.height = "9rem";
-
-    title.style.fontSize = "2rem";
+    title.style.fontSize = "2.2rem";
     title.style.marginTop = "1.5rem";
     title.style.marginBottom = "1rem";
 
