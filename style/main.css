@@ -782,7 +782,7 @@ footer {
 
 @media (pointer:fine) {
   html {
-    background-image: url(img/bg/desktop.webp);
+    background-image: url(../img/bg/desktop.webp);
     background-size: cover;
     background-attachment: fixed;
   }
