@@ -436,14 +436,6 @@ footer {
   margin-bottom: .5rem;
 }
 
-/* 
-@-moz-document url-prefix() {
-  #footer, .glass {
-    background: linear-gradient(165deg, rgba(255, 255, 255, .9), rgba(255, 255, 255, .6));
-  }
-}
-*/
-
 @media only screen and (max-device-width: 320px) {
   nav > a > svg {
     width: 25px;
@@ -812,5 +804,12 @@ footer {
   footer::-webkit-scrollbar-thumb {
     background-color: rgba(0, 0, 0, .1);
     border-radius: 10px;
+  }
+}
+
+@-moz-document url-prefix() {
+  header, body, footer, .glass {
+    background: linear-gradient(165deg, rgba(255, 255, 255, .9), rgba(255, 255, 255, .6));
+    backdrop-filter: unset;
   }
 }
